@@ -593,7 +593,7 @@ Tried: Reinstalling, different Python version
 
 **We're here to help!** 🤝
 
-[**🐛 Create GitHub Issue**](../../issues/new) • [**💬 Ask Community**](../../discussions) • [**📧 Email Support**](mailto:kaloyaxploit@gmail.com)
+[**🐛 Create GitHub Issue**](../../issues/new) • [**📧 Email Support**](mailto:kaloyaxploit@gmail.com)
 
 ### ⭐ **Pro Tip**
 **Star the repository** to get notified of updates and fixes!
@@ -610,4 +610,5 @@ Tried: Reinstalling, different Python version
 *If this guide helped you, consider starring the repository! ⭐*
 
 </div>
+
 

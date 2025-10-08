@@ -233,16 +233,7 @@ chmod 755 youtube-automation-suite
 3. Look for **"YouTube Data API v3"** quota usage
 4. Wait 24 hours for quota reset
 
-#### Solution 2: Reduce Usage
-```bash
-# Increase delays between actions
-python src/youtube_automation_cli.py --action like --file likes.txt --delay 10.0
-
-# Set lower limits
-python src/youtube_automation_cli.py --action like --file likes.txt --limit 50
-```
-
-#### Solution 3: Request Quota Increase
+#### Solution 2: Request Quota Increase
 1. Go to [Google Cloud Console Quotas](https://console.cloud.google.com/iam-admin/quotas)
 2. Filter for **"YouTube Data API v3"**
 3. Select quotas to increase
@@ -610,5 +601,6 @@ Tried: Reinstalling, different Python version
 *If this guide helped you, consider starring the repository! ⭐*
 
 </div>
+
 
 

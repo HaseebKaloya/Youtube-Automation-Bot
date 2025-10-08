@@ -2,8 +2,6 @@
 
 <div align="center">
 
-![Troubleshooting](https://img.shields.io/badge/Support-Troubleshooting-orange?style=for-the-badge)
-![Help](https://img.shields.io/badge/Need_Help-Read_This-green?style=for-the-badge)
 
 **Quick solutions to common problems** 🛠️
 
@@ -601,6 +599,7 @@ Tried: Reinstalling, different Python version
 *If this guide helped you, consider starring the repository! ⭐*
 
 </div>
+
 
 
 

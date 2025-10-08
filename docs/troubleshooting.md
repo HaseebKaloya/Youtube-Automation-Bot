@@ -288,39 +288,6 @@ python src/youtube_automation_cli.py --action like --file likes.txt --limit 50
 
 ---
 
-## ⚡ Performance Issues
-
-### ❌ Problem: Slow Automation
-
-**Symptoms:**
-- Actions take much longer than expected
-- Long delays between operations
-- Overall slow performance
-
-**Solutions:**
-
-#### Solution 1: Optimize Settings
-```bash
-# Reduce delays (be careful with rate limits!)
-python src/youtube_automation_cli.py --action like --file likes.txt --delay 3.0 --jitter 1.0
-
-# Use CLI for better performance (no GUI overhead)
-python src/youtube_automation_cli.py --action like --file likes.txt
-```
-
-#### Solution 2: Check Network
-```bash
-# Test YouTube API response time
-curl -w "@curl-format.txt" -o /dev/null -s "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=dQw4w9WgXcQ&key=YOUR_KEY"
-
-# If slow, try different network or VPN
-```
-
-#### Solution 3: System Resources
-1. Close other applications
-2. Check internet connection speed
-3. Ensure sufficient RAM available
-4. Use wired connection instead of WiFi
 
 ### ❌ Problem: High Memory Usage
 
@@ -331,18 +298,11 @@ curl -w "@curl-format.txt" -o /dev/null -s "https://www.googleapis.com/youtube/v
 
 **Solutions:**
 
-#### Solution 1: Process in Batches
-```bash
-# Instead of one large file, split into smaller batches
-python src/youtube_automation_cli.py --action like --file batch1.txt --limit 100
-python src/youtube_automation_cli.py --action like --file batch2.txt --limit 100
-```
-
-#### Solution 2: Restart Application
+#### Solution 1: Restart Application
 - For long sessions, restart the application every few hours
 - This clears memory and resets connections
 
-#### Solution 3: Optimize Input Files
+#### Solution 2: Optimize Input Files
 - Remove comments and empty lines from input files
 - Use shorter URLs (video IDs instead of full URLs)
 - Split large files into smaller ones
@@ -360,16 +320,7 @@ python src/youtube_automation_cli.py --action like --file batch2.txt --limit 100
 
 **Solutions:**
 
-#### Solution 1: Check File Paths
-```bash
-# Use absolute paths to be sure
-python src/youtube_automation_cli.py --action like --file /full/path/to/likes.txt
-
-# Or ensure files are in correct relative location
-# GUI: Files should be selectable through file dialog
-```
-
-#### Solution 2: File Permissions
+#### Solution 1: File Permissions
 ```bash
 # Check file permissions
 ls -la likes.txt
@@ -380,7 +331,7 @@ chmod 644 comments.txt
 chmod 644 channels.txt
 ```
 
-#### Solution 3: File Encoding
+#### Solution 2: File Encoding
 ```bash
 # Ensure files are UTF-8 encoded
 file -i likes.txt
@@ -502,26 +453,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 ---
 
-## 🔧 Advanced Troubleshooting
-
-### 🐛 Debug Mode
-
-Enable detailed logging to identify issues:
-
-#### GUI Debug Mode
-1. Go to **Settings** tab
-2. Set **Log Level** to **"DEBUG"**
-3. Reproduce the issue
-4. Check logs for detailed information
-
-#### CLI Debug Mode
-```bash
-python src/youtube_automation_cli.py --action like --file likes.txt --log-level DEBUG
-
-# Save logs to file
-python src/youtube_automation_cli.py --action like --file likes.txt --log-level DEBUG 2> debug.log
-```
-
 ### 📊 System Information Script
 
 Create a diagnostic script to gather system info:
@@ -609,7 +540,7 @@ Please gather this information:
 - [API Reference](api_reference.md)
 
 #### 4. Emergency Contact
-- **Email**: support@kaloyaxploit.com
+- **Email**: kaloyaxploit@gmail.com
 - **Response Time**: 24-48 hours
 
 ### 🎁 Providing Helpful Information
@@ -662,7 +593,7 @@ Tried: Reinstalling, different Python version
 
 **We're here to help!** 🤝
 
-[**🐛 Create GitHub Issue**](../../issues/new) • [**💬 Ask Community**](../../discussions) • [**📧 Email Support**](mailto:support@kaloyaxploit.com)
+[**🐛 Create GitHub Issue**](../../issues/new) • [**💬 Ask Community**](../../discussions) • [**📧 Email Support**](mailto:kaloyaxploit@gmail.com)
 
 ### ⭐ **Pro Tip**
 **Star the repository** to get notified of updates and fixes!
@@ -679,3 +610,4 @@ Tried: Reinstalling, different Python version
 *If this guide helped you, consider starring the repository! ⭐*
 
 </div>
+
